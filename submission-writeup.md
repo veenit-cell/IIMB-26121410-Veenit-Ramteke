@@ -20,7 +20,7 @@
 The website is implemented strictly with **Pure HTML5 and CSS3** (no JavaScript dependencies):
 
 1. **Header & Navigation:** Sticky top header with `VR` wordmark and a pure CSS mobile drawer via native `<details>` and `<summary>`.
-2. **Hero / Introduction:** Summary headline (*"Curious by nature. Building by practice."*), background lead, action buttons, stat cards, and portrait photograph (`assets/images/veenit-profile.jpeg`).
+2. **Hero / Introduction:** Summary headline (*"Curious by nature. Building by practice."*), background lead, action buttons, stat cards, and portrait photograph (`assets/images/veenit-portrait.jpg`).
 3. **Animated Ticker:** Looping marquee powered purely by CSS `@keyframes marquee-scroll`, auto-pausing on hover.
 4. **About & Professional Summary:** Full narrative detailing background across AI, machine learning, and systems, plus structured 4-column technical skills matrix.
 5. **Experience:** Policy, Politics & Governance Foundation (PPGF) — Political Consulting Intern / ICPC Trainee (Oct 2026 – Present).
