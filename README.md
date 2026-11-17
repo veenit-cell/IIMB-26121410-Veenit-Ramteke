@@ -16,7 +16,7 @@
   <p align="center">
     <a href="https://veenit-portfolio-one.vercel.app"><strong>Explore Live Portfolio »</strong></a>
     ·
-    <a href="https://github.com/veenit-cell/publication"><strong>Research Publication Repo »</strong></a>
+    <a href="https://github.com/veenit-cell/IIMB-26121410-Veenit-Ramteke"><strong>GitHub Repository »</strong></a>
     ·
     <a href="https://doi.org/10.5281/zenodo.19552932"><strong>Zenodo DOI »</strong></a>
     ·
@@ -278,6 +278,7 @@ npx vercel --prod
 - **Location:** Pune, Maharashtra, India
 - **LinkedIn:** [linkedin.com/in/veenit-ramteke](https://www.linkedin.com/in/veenit-ramteke/)
 - **GitHub:** [github.com/veenit-cell](https://github.com/veenit-cell)
+- **Portfolio Repo:** [github.com/veenit-cell/IIMB-26121410-Veenit-Ramteke](https://github.com/veenit-cell/IIMB-26121410-Veenit-Ramteke)
 - **Publication Repo:** [github.com/veenit-cell/publication](https://github.com/veenit-cell/publication)
 
 ---
