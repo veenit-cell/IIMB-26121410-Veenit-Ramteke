@@ -14,7 +14,9 @@ Thumbs.db
 
 # Internal submission draft sheets
 submission.html
+submission-doc.html
 submission-writeup.md
+.pdf-tmp/
 
 # Legacy / unused placeholder assets
 assets/images/*placeholder.svg
