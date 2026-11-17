@@ -1,0 +1,27 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+
+# PDF documents & internal artifacts (not visible for evaluation)
+*.pdf
+.pdf-profile/
+.pdf-profile-2/
+*.pma
+*.dmp
+*.dat
+
+# Internal submission draft sheets
+submission.html
+submission-writeup.md
+
+# Legacy / unused placeholder assets
+assets/images/*placeholder.svg
+assets/images/carbonloop-app-icon.webp
+assets/images/drishti-operational-loop.svg
+assets/images/vash-tier1-dashboard.png
+assets/images/veenit-profile.jpeg
+
+# Vercel deployment cache
+.vercel
