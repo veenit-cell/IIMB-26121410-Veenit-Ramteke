@@ -1,469 +1,696 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veenit Ramteke — Portfolio 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f2">
+  <meta name="description" content="Personal portfolio of Veenit Ramteke — AI & Software Engineer focused on building intelligent, data-driven applications across disaster response, financial fraud detection, and career intelligence. Pure HTML & CSS.">
+  <title>Veenit Ramteke — AI &amp; Software Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- ── NAV ── -->
-<nav aria-label="Primary">
-  <a class="nav-logo" href="#hero">Veenit Ramteke</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#services">What I Do</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button type="button" class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-controls="drawer" aria-expanded="false" aria-haspopup="dialog">
-    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-  </button>
-</nav>
+  <!-- ── SITE HEADER ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Veenit Ramteke, back to top">
+        <span class="wordmark-icon" aria-hidden="true">VR</span>
+        <span class="wordmark-name">
+          <strong>Veenit Ramteke</strong>
+          <small>AI &amp; Software Engineer</small>
+        </span>
+      </a>
 
-<dialog class="mobile-drawer" id="drawer" aria-label="Navigation menu">
-  <button type="button" class="drawer-close" id="drawerClose" aria-label="Close navigation menu" autofocus><span aria-hidden="true">✕</span></button>
-  <a href="#about" class="drawer-link">About</a>
-  <a href="#work" class="drawer-link">Work</a>
-  <a href="#achievements" class="drawer-link">Achievements</a>
-  <a href="#services" class="drawer-link">What I Do</a>
-  <a href="#contact" class="drawer-link">Contact</a>
-</dialog>
+      <!-- Desktop Navigation -->
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Get in Touch <span aria-hidden="true">↗</span></a>
+      </nav>
 
-<main id="main-content" tabindex="-1">
-<!-- ── HERO ── -->
-<section id="hero">
-
-  <!-- Parallax photo columns -->
-  <div class="hero-col col-far-left"  data-speed="0.28">
-    <div class="hero-frame"><img src="assets/images/drishti-operational-loop.svg" alt=""></div>
-    <div class="hero-frame"><img src="assets/images/carbonloop-app-icon.webp" alt=""></div>
-  </div>
-  <div class="hero-col col-mid-left"  data-speed="0.52">
-    <div class="hero-frame"><img src="assets/images/vash-tier1-dashboard.png" alt=""></div>
-  </div>
-  <div class="hero-col col-mid-right" data-speed="0.44">
-    <div class="hero-frame"><img src="assets/images/drishti-operational-loop.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-far-right" data-speed="0.22">
-    <div class="hero-frame"><img src="assets/images/carbonloop-app-icon.webp" alt=""></div>
-    <div class="hero-frame"><img src="assets/images/vash-tier1-dashboard.png" alt=""></div>
-  </div>
-  <div class="hero-col col-bot-left"  data-speed="0.82">
-    <div class="hero-frame"><img src="assets/images/drishti-operational-loop.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-bot-right" data-speed="0.72">
-    <div class="hero-frame"><img src="assets/images/carbonloop-app-icon.webp" alt=""></div>
-  </div>
-
-  <!-- Hero text -->
-  <div class="hero-content">
-    <p class="hero-label-top">Portfolio — 2026</p>
-    <p class="hero-hi">Hi, I'm</p>
-    <h1 class="hero-name">Veenit</h1>
-    <p class="hero-roles">AI Engineer · Student · 22</p>
-    <div class="hero-ctas">
-      <a href="#work" class="btn-primary">View Work</a>
-      <a href="#contact" class="btn-ghost">Let's Talk →</a>
+      <!-- Pure HTML/CSS Mobile Navigation -->
+      <details class="mobile-nav">
+        <summary aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </summary>
+        <nav class="mobile-drawer" aria-label="Mobile navigation">
+          <a href="#about">01 / About</a>
+          <a href="#experience">02 / Experience</a>
+          <a href="#projects">03 / Projects</a>
+          <a href="#publications">04 / Publications</a>
+          <a href="#achievements">05 / Achievements</a>
+          <a href="#education">06 / Education</a>
+          <a href="#contact">07 / Contact</a>
+        </nav>
+      </details>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ── WORK ── -->
-<section id="work" aria-labelledby="work-heading">
-  <p class="section-label">— Work</p>
-  <h2 class="work-heading" id="work-heading">The <em>work</em></h2>
-  <div class="project-grid">
-    <article class="work-item reveal" aria-labelledby="drishti-title">
-      <img src="assets/images/drishti-operational-loop.svg" alt="DRISHTI operational loop diagram showing evidence review, decision support, human approval, and field updates">
-      <div class="work-details">
-        <p class="work-cat">Disaster response · Tabletop demo</p>
-        <h3 class="work-title" id="drishti-title">DRISHTI</h3>
-        <p class="work-description">A disaster-response workspace that brings field reports, coverage gaps, routes, and resources into one review process. Missions require human approval, with decision history and offline command reconciliation supporting the workflow.</p>
-        <p class="work-stack"><strong>Stack:</strong> React, TypeScript, FastAPI, PostgreSQL / PostGIS.</p>
-        <p class="work-status">Supervised tabletop demo; not a live emergency deployment.</p>
-        <a class="project-link" href="https://github.com/veenit-cell/DRISHTI">View DRISHTI on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="work-item reveal" aria-labelledby="carbonloop-title">
-      <img src="assets/images/carbonloop-app-icon.webp" alt="CarbonLoop app icon from the project repository">
-      <div class="work-details">
-        <p class="work-cat">Sustainability · Hackathon MVP</p>
-        <h3 class="work-title" id="carbonloop-title">CarbonLoop</h3>
-        <p class="work-description">A sustainability game that turns everyday activities into missions, progression, and rewards. A deterministic carbon engine keeps estimated avoided emissions separate from game points, while browser storage preserves demo progress.</p>
-        <p class="work-stack"><strong>Web stack:</strong> Next.js, React, TypeScript, Tailwind CSS.</p>
-        <p class="work-status">Hackathon demo using synthetic activities, simulated evidence, and mock rewards.</p>
-        <a class="project-link" href="https://github.com/veenit-cell/CARBON-LOOP-FINAL">View CarbonLoop on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="work-item reveal" aria-labelledby="vash-title">
-      <img src="assets/images/vash-tier1-dashboard.png" alt="VASH Tier-1 audit and risk dashboard screenshot">
-      <div class="work-details">
-        <p class="work-cat">Transaction monitoring · Hackathon project</p>
-        <h3 class="work-title" id="vash-title">VASH</h3>
-        <p class="work-description">A transaction-monitoring project combining anomaly scoring, graph analysis, and a security operations dashboard to investigate suspicious payment patterns.</p>
-        <p class="work-stack"><strong>Stack:</strong> React, TypeScript, FastAPI, Python.</p>
-        <p class="work-stack"><strong>My contribution:</strong> Database and data structuring.</p>
-        <p class="work-status">Team project for Hack2Ignite 2026.</p>
-        <a class="project-link" href="https://github.com/S-Abhiram05/Hack2ignite-VASH">View VASH on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ── ACHIEVEMENTS ── -->
-<section id="achievements" aria-labelledby="achievements-heading">
-  <p class="section-label">— Achievements</p>
-  <h2 class="work-heading" id="achievements-heading">Beyond the <em>build</em></h2>
-  <div class="achievements-grid">
-    <article class="achievement-card reveal" aria-labelledby="electronova-title">
-      <img src="assets/images/electronova-robotics-winner.jpeg" alt="ELECTRONOVA winner holding a certificate and trophy beside a ₹15,000 team prize cheque" width="1200" height="1600" loading="lazy">
-      <div class="achievement-details">
-        <p class="achievement-label">1st place · Robotics</p>
-        <h3 id="electronova-title">ELECTRONOVA Hackathon</h3>
-        <p>Acropolis Institute of Technology and Research, Indore · 2026</p>
-        <p>First place in robotics at the 24-hour national-level hackathon. Team Hiveminds received a ₹15,000 prize.</p>
-        <a href="assets/images/electronova-robotics-winner.jpeg">View ELECTRONOVA award photo</a>
-        <a href="https://github.com/veenit-cell/Electonova-Hackathon_Winning_Robot-" target="_blank" rel="noopener">View ELECTRONOVA project on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="achievement-card reveal" aria-labelledby="avinya-title">
-      <img src="assets/images/avinya-iit-guwahati.jpeg" alt="AVINYA 2026 participants holding certificates beside the IIT Guwahati podium" width="1280" height="960" loading="lazy">
-      <div class="achievement-details">
-        <p class="achievement-label">Top 15 finalist</p>
-        <h3 id="avinya-title">AVINYA 2026</h3>
-        <p>Indian Institute of Technology Guwahati</p>
-        <p>Selected among the top 15 finalists at the AVINYA 2026 hackathon at IIT Guwahati.</p>
-        <a href="assets/images/avinya-iit-guwahati.jpeg">View AVINYA event photo</a>
-      </div>
-    </article>
-  </div>
-</section>
-<!-- ── ABOUT ── -->
-<section id="about">
-  <p class="section-label reveal">— About</p>
-
-  <div class="about-row1">
-    <div class="reveal">
-      <h2 class="about-headline" id="aboutHeadline">
-        <em>"I've always chased</em><br>the next thing."
-      </h2>
-      <p class="about-bio">
-        3rd Year Engineering Student | Aspiring AI Engineer 🤖 | Exploring AI, Machine Learning, Hackathons &amp; Innovation | Learning and building projects to solve real-world problems 🚀
-      </p>
-    </div>
-    <div class="about-portrait-frame reveal">
-      <img src="assets/images/veenit-profile.jpeg" alt="Veenit Ramteke wearing a life jacket on a boat" width="1200" height="1600" loading="lazy">
-    </div>
-  </div>
-
-  <div class="about-row2 reveal">
-    <p class="interests-label">Interests</p>
-    <div class="interests-grid">
-      <div class="interest-card">
-        <span class="interest-icon">🤖</span>
-        <span class="interest-label">Artificial Intelligence</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">💻</span>
-        <span class="interest-label">Machine Learning</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">🚀</span>
-        <span class="interest-label">Hackathons</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">🧠</span>
-        <span class="interest-label">Problem Solving</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">⚡</span>
-        <span class="interest-label">Real-World Projects</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── QUOTE BANNER ── -->
-<section id="quote">
-  <blockquote class="quote-text reveal">
-    "Teaching machines to think while never stopping my own learning." 🤖<br>
-    "Turning ideas into intelligence, one model at a time."
-  </blockquote>
-  <p class="quote-attr reveal">— <em>Veenit Ramteke</em></p>
-</section>
-
-
-
-<!-- ── WHAT I DO ── -->
-<section id="services">
-  <p class="services-label reveal">— What I Do</p>
-  <h2 class="services-heading reveal">Building things that <em>matter</em></h2>
-
-  <div class="services-grid">
-    <div class="service-card reveal">
-      <p class="service-num">01</p>
-      <h3 class="service-title">AI &amp; <em>Machine Learning</em></h3>
-      <p class="service-body">DRISHTI brings reports, coverage gaps, and mission approvals into a supervised disaster-response workspace. VASH explores anomaly scoring and graph analysis for suspicious transaction patterns.</p>
-    </div>
-    <div class="service-card reveal">
-      <p class="service-num">02</p>
-      <h3 class="service-title">Full-Stack <em>Engineering</em></h3>
-      <p class="service-body">The featured projects span React interfaces, Python APIs, and shared TypeScript domain logic: DRISHTI for disaster response, CarbonLoop for sustainability missions, and VASH for transaction monitoring.</p>
-    </div>
-    <div class="service-card reveal">
-      <p class="service-num">03</p>
-      <h3 class="service-title">Data &amp; <em>Analytics</em></h3>
-      <p class="service-body">CarbonLoop separates deterministic carbon estimates from game progression. My documented contribution to VASH focuses on database and data structuring.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ── -->
-<section id="contact">
-  <p class="section-label reveal">— Contact</p>
-  <div class="contact-grid">
-    <div>
-      <h2 class="contact-heading" id="contactHeadline">
-        Let's build<br>something <em>great.</em>
-      </h2>
-      <div class="social-links">
-        <a href="mailto:veenitramteke@gmail.com" class="social-link reveal">
-          <span class="social-link-type">Email</span>
-          <span class="social-link-value">veenitramteke@gmail.com</span>
-        </a>
-        <a href="https://instagram.com/veenitr" class="social-link reveal" target="_blank" rel="noopener">
-          <span class="social-link-type">Instagram</span>
-          <span class="social-link-value">@veenitr</span>
-        </a>
-        <a href="https://www.linkedin.com/in/veenit-ramteke/" class="social-link reveal" target="_blank" rel="noopener">
-          <span class="social-link-type">LinkedIn</span>
-          <span class="social-link-value">linkedin.com/in/veenit-ramteke</span>
-        </a>
-        <a href="https://github.com/veenit-cell" class="social-link reveal" target="_blank" rel="noopener">
-          <span class="social-link-type">GitHub</span>
-          <span class="social-link-value">github.com/veenit-cell</span>
-        </a>
-      </div>
-    </div>
-    <div>
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required minlength="2" aria-required="true">
+  <main id="main">
+    <!-- ── HERO / INTRODUCTION ── -->
+    <section class="hero-section section-wrap" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow-tag">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span>Pune, India · AI &amp; Software Engineer</span>
+          </div>
+          <h1 id="hero-title">
+            Curious by nature.<br>
+            <em>Building</em> by practice.
+          </h1>
+          <p class="hero-lead">
+            I’m <strong>Veenit Ramteke</strong>, an AI &amp; Software Engineer focused on building intelligent, data-driven applications across disaster response, financial fraud detection, and career intelligence. Experienced in developing geospatial intelligence systems, graph-based threat detection, and secure full-stack architectures.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#projects">Explore Projects <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-outline" href="#publications">View Publication <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-accent" href="#contact">Say Hello <span aria-hidden="true">✉</span></a>
+          </div>
+          <div class="hero-stats" aria-label="Quick Highlights">
+            <div class="stat-item">
+              <span class="stat-number">1st Prize</span>
+              <span class="stat-label">AVINYA · IIT Guwahati</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1st Place</span>
+              <span class="stat-label">Electronova Innovation</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">IIM B</span>
+              <span class="stat-label">Digital Business &amp; Entr.</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8.5 CGPA</span>
+              <span class="stat-label">B.Tech Computer Science</span>
+            </div>
+          </div>
         </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-required="true">
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project…" required minlength="10" maxlength="4000" aria-required="true"></textarea>
-        </div>
-        <button class="btn-submit" type="submit">Open Email Draft</button>
-        <p class="form-note">Your email app will open with a draft addressed to me. Nothing is sent automatically.</p>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
+
+        <aside class="hero-aside" aria-label="Personal Overview Card">
+          <div class="portrait-card">
+            <div class="portrait-header">
+              <span class="tag-code">ENGINEER PROFILE</span>
+              <span class="tag-status">Pune, India</span>
+            </div>
+            <div class="portrait-img-box">
+              <img src="assets/images/veenit-profile.jpeg" alt="Veenit Ramteke portrait photograph" width="600" height="800" loading="eager">
+              <span class="badge-role">AI &amp; Software Engineer</span>
+            </div>
+            <div class="portrait-footer">
+              <p class="portrait-quote">"Combines software engineering, analytical problem-solving, and AI-driven innovation for real-world challenges."</p>
+              <div class="portrait-meta">
+                <span>veenitramteke@gmail.com</span>
+                <span>+91 8766901425</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ── TICKER RIBBON (PURE CSS) ── -->
+    <div class="ticker-ribbon" aria-label="Core Technical Themes">
+      <div class="ticker-track" aria-hidden="true">
+        <span>GEOSPATIAL INTELLIGENCE ✳</span>
+        <span>GRAPH THREAT DETECTION ✳</span>
+        <span>CAREER INTELLIGENCE ✳</span>
+        <span>DECISION SYSTEMS ✳</span>
+        <span>DISASTER RESPONSE ✳</span>
+        <span>FINANCIAL FRAUD ANALYTICS ✳</span>
+        <span>POLITICAL CONSULTING &amp; DATA ✳</span>
+        <span>GEOSPATIAL INTELLIGENCE ✳</span>
+        <span>GRAPH THREAT DETECTION ✳</span>
+        <span>CAREER INTELLIGENCE ✳</span>
+        <span>DECISION SYSTEMS ✳</span>
+        <span>DISASTER RESPONSE ✳</span>
+        <span>FINANCIAL FRAUD ANALYTICS ✳</span>
+        <span>POLITICAL CONSULTING &amp; DATA ✳</span>
+      </div>
     </div>
-  </div>
-</section>
 
-</main>
-<!-- ── FOOTER ── -->
-<footer>
-  <span class="footer-name">Veenit Ramteke</span>
-  <span class="footer-copy">© 2026 — All rights reserved</span>
-  <div class="footer-links">
-    <a href="https://instagram.com/veenitr" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.linkedin.com/in/veenit-ramteke/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/veenit-cell" target="_blank" rel="noopener">GitHub</a>
-    <a href="mailto:veenitramteke@gmail.com">Email</a>
-  </div>
-</footer>
+    <!-- ── ABOUT & PROFESSIONAL SUMMARY ── -->
+    <section class="content-section section-wrap" id="about" aria-labelledby="about-title">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">01 / Professional Summary</p>
+          <h2 id="about-title">Bridging analytical rigor<br><em>with software execution.</em></h2>
+        </div>
+        <p class="section-summary">
+          Specializing in Python, React, Node.js, FastAPI, and machine learning to build secure, transparent, and resilient digital architectures.
+        </p>
+      </div>
 
-<script>
-/* ══════════════════════════════════
-   NAV / HAMBURGER
-══════════════════════════════════ */
-const hamburger = document.getElementById('hamburger');
-const drawer = document.getElementById('drawer');
-const drawerClose = document.getElementById('drawerClose');
-const mobileNavigation = window.matchMedia('(max-width: 1000px)');
+      <div class="about-narrative">
+        <div class="narrative-main">
+          <p class="lead-text">
+            I build practical solutions for complex real-world challenges by merging modern full-stack development with cutting-edge machine learning and data engineering.
+          </p>
+          <p>
+            My engineering work spans three flagship domains: <strong>geospatial disaster response</strong> with deterministic decision trees and offline command sync; <strong>financial crime detection</strong> using Isolation Forests, SHAP explainability, and graph topological analysis; and <strong>career readiness systems</strong> featuring multi-role institutional architectures.
+          </p>
+          <p>
+            Beyond technical implementation, I actively cultivate business acumen and strategic governance as a student in <strong>IIM Bangalore's BBA in Digital Business &amp; Entrepreneurship</strong> and an intern at the <strong>Policy, Politics &amp; Governance Foundation (PPGF)</strong>.
+          </p>
+          <blockquote class="pull-quote">
+            "Turning ideas into intelligence: one model, one architecture, and one verified deployment at a time."
+          </blockquote>
+        </div>
 
-if (typeof drawer.showModal === 'function') {
-  let focusAfterClose = null;
-  function closeNavigation(target = hamburger) {
-    focusAfterClose = target;
-    hamburger.setAttribute('aria-expanded', 'false');
-    drawer.close();
-  }
-  hamburger.addEventListener('click', () => {
-    if (!mobileNavigation.matches) return;
-    focusAfterClose = hamburger;
-    drawer.showModal();
-    hamburger.setAttribute('aria-expanded', 'true');
-    drawerClose.focus();
-  });
-  drawerClose.addEventListener('click', () => closeNavigation());
-  drawer.addEventListener('keydown', event => {
-    if (event.key !== 'Tab') return;
-    const controls = [...drawer.querySelectorAll('button, a[href]')];
-    const first = controls[0];
-    const last = controls[controls.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
-  });
-  drawer.addEventListener('cancel', event => {
-    event.preventDefault();
-    closeNavigation();
-  });
-  drawer.addEventListener('close', () => {
-    hamburger.setAttribute('aria-expanded', 'false');
-    (focusAfterClose || hamburger).focus({ preventScroll: true });
-    focusAfterClose = null;
-  });
-  drawer.querySelectorAll('.drawer-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const target = document.getElementById(link.hash.slice(1));
-      if (target) target.setAttribute('tabindex', '-1');
-      closeNavigation(target || hamburger);
-    });
-  });
-  mobileNavigation.addEventListener('change', event => {
-    if (!event.matches && drawer.open) closeNavigation(document.querySelector('.nav-logo'));
-  });
-  document.querySelector('nav').classList.add('menu-ready');
-}
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const scrollProgress = document.getElementById('scrollProgress');
-const navSectionLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
-if (!reducedMotion.matches) document.body.classList.add('motion-ready');
+        <aside class="narrative-side">
+          <div class="info-box">
+            <h3>At a Glance</h3>
+            <ul class="fact-list">
+              <li><strong>Location:</strong> Pune, India</li>
+              <li><strong>Contact:</strong> +91 8766901425 · veenitramteke@gmail.com</li>
+              <li><strong>Current Focus:</strong> Geospatial AI, Graph Analytics, Threat Detection</li>
+              <li><strong>Institutions:</strong> IIM Bangalore &amp; GH Raisoni College of Engineering</li>
+              <li><strong>Published Research:</strong> Recent Trends in Data Science Technology (2026)</li>
+            </ul>
+          </div>
+          <div class="info-box accent-box">
+            <h3>Philosophy</h3>
+            <p>Data without structured domain logic is noise. Great engineering gives data structure, isolates empirical facts from gamified metrics, and prioritizes human oversight in mission-critical choices.</p>
+          </div>
+        </aside>
+      </div>
 
-/* Contact: build a draft locally; no message is sent by this page. */
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-if (contactForm) {
-  contactForm.addEventListener('submit', event => {
-    event.preventDefault();
-    if (!contactForm.reportValidity()) {
-      formStatus.textContent = 'Please complete the required fields before opening your email app.';
-      return;
-    }
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const subject = `Portfolio enquiry from ${name}`;
-    const body = `Name: ${name}\nReply email: ${email}\n\n${message}`;
-    formStatus.textContent = 'Opening your email app with a draft. Review it before sending.';
-    window.location.href = `mailto:veenitramteke@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
-}
+      <!-- Technical Skills Matrix -->
+      <div class="skills-section">
+        <h3 class="skills-heading">Technical Skills &amp; Competencies</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <span class="skill-cat-title">Programming Languages</span>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>C++</span>
+              <span>Java</span>
+              <span>SQL</span>
+            </div>
+          </div>
 
-/* ══════════════════════════════════
-   SCROLL-LINKED MOTION
-══════════════════════════════════ */
-const heroCols = document.querySelectorAll('.hero-col');
-const heroEl   = document.getElementById('hero');
-const aboutHeadline   = document.getElementById('aboutHeadline');
-const contactHeadline = document.getElementById('contactHeadline');
-const motionSections = [...document.querySelectorAll('main section[id]')];
-let motionFrame = 0;
+          <div class="skill-category">
+            <span class="skill-cat-title">Frameworks &amp; Libraries</span>
+            <div class="skill-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>FastAPI</span>
+              <span>PyTorch</span>
+              <span>Scikit-Learn</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+            </div>
+          </div>
 
-function updateMotion() {
-  motionFrame = 0;
-  const scrollY = window.scrollY;
-  const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-  if (scrollProgress) scrollProgress.style.transform = `scaleX(${Math.min(scrollY / maxScroll, 1).toFixed(4)})`;
-  if (reducedMotion.matches) return;
+          <div class="skill-category">
+            <span class="skill-cat-title">Databases &amp; Spatial</span>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>PostGIS</span>
+              <span>SQLite</span>
+              <span>MySQL</span>
+              <span>GeoJSON</span>
+            </div>
+          </div>
 
-  heroCols.forEach(col => {
-    const speed = parseFloat(col.dataset.speed) || 0.3;
-    col.style.transform = `translateY(${-scrollY * speed}px)`;
-  });
+          <div class="skill-category">
+            <span class="skill-cat-title">Core Concepts &amp; Platforms</span>
+            <div class="skill-tags">
+              <span>Machine Learning</span>
+              <span>Geospatial Intelligence</span>
+              <span>Graph Analytics</span>
+              <span>REST API Design</span>
+              <span>JWT</span>
+              <span>Docker</span>
+              <span>Git &amp; GitHub</span>
+              <span>Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  const progress = Math.min(scrollY / 600, 1);
-  const eased = 1 - Math.pow(1 - progress, 2.2);
-  heroEl.style.setProperty('--hero-fade', eased.toFixed(4));
-  const vc = window.innerHeight / 2;
-  [aboutHeadline, contactHeadline].forEach(el => {
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const elCentre = rect.top + rect.height / 2;
-    const dist = elCentre - vc;
-    el.style.transform = `translateY(${(dist * 0.025).toFixed(2)}px)`;
-  });
+    <!-- ── EXPERIENCE SECTION ── -->
+    <section class="content-section bg-contrast" id="experience" aria-labelledby="experience-title">
+      <div class="section-wrap">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">02 / Professional Experience</p>
+            <h2 id="experience-title">Policy research &amp;<br><em>data-driven governance.</em></h2>
+          </div>
+          <p class="section-summary">
+            Applying analytical modeling, political intelligence, and AI research tools to public policy and strategic consulting.
+          </p>
+        </div>
 
-  let activeId = '';
-  motionSections.forEach(section => {
-    const rect = section.getBoundingClientRect();
-    if (rect.top <= 140 && rect.bottom > 140) activeId = section.id;
-  });
-  navSectionLinks.forEach(link => {
-    if (link.getAttribute('href') === `#${activeId}`) link.setAttribute('aria-current', 'page');
-    else link.removeAttribute('aria-current');
-  });
-}
-function scheduleMotion() {
-  if (!motionFrame) motionFrame = requestAnimationFrame(updateMotion);
-}
-window.addEventListener('scroll', scheduleMotion, { passive: true });
-window.addEventListener('resize', scheduleMotion, { passive: true });
-updateMotion();
-reducedMotion.addEventListener('change', () => {
-  if (reducedMotion.matches) {
-    document.body.classList.remove('motion-ready');
-    heroCols.forEach(col => col.style.transform = '');
-    [aboutHeadline, contactHeadline].forEach(el => { if (el) el.style.transform = ''; });
-  } else {
-    document.body.classList.add('motion-ready');
-  }
-  scheduleMotion();
-});
+        <div class="experience-card">
+          <div class="exp-header">
+            <div>
+              <span class="exp-role">Political Consulting Intern / ICPC Trainee</span>
+              <h3 class="exp-company">Policy, Politics &amp; Governance Foundation (PPGF)</h3>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-duration">Oct 2026 — Present</span>
+              <span class="exp-badge">Current Role</span>
+            </div>
+          </div>
+          <div class="exp-body">
+            <ul class="exp-bullets">
+              <li>Selected for the prestigious <strong>Introductory Course to Political Consulting (ICPC)</strong>, gaining hands-on exposure to quantitative policy research, political intelligence, campaign strategy, and strategic public communication.</li>
+              <li>Developing advanced analytical skills through data science, statistical inference, economics in policymaking, and AI-powered research tools to drive data-informed decision-making and modern governance initiatives.</li>
+              <li>Collaborating on multi-dimensional datasets to extract actionable intelligence and evaluate governance metrics with high precision.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* ══════════════════════════════════
-   SCROLL REVEAL — IntersectionObserver
-══════════════════════════════════ */
-const revealEls = document.querySelectorAll('.reveal');
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  try {
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('reveal-pending');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0 });
-    revealEls.forEach(el => {
-      revealObserver.observe(el);
-      // Never hide content already in view or containing keyboard focus.
-      if (el.getBoundingClientRect().top > window.innerHeight && !el.contains(document.activeElement)) {
-        el.classList.add('reveal-pending');
-      }
-      el.addEventListener('focusin', () => el.classList.remove('reveal-pending'));
-    });
-    reducedMotion.addEventListener('change', () => {
-      if (reducedMotion.matches) {
-        revealObserver.disconnect();
-        revealEls.forEach(el => el.classList.remove('reveal-pending'));
-      }
-    });
-  } catch (_) {
-    revealEls.forEach(el => el.classList.remove('reveal-pending'));
-  }
-}
-</script>
+    <!-- ── SELECTED PROJECTS SECTION ── -->
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-wrap">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">03 / Flagship Projects</p>
+            <h2 id="projects-title">Intelligent systems &amp;<br><em>secure architectures.</em></h2>
+          </div>
+          <p class="section-summary">
+            Engineered from ground up across disaster management, financial intelligence, career development, and competitive robotics.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: DRISHTI -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/drishti-operational-loop.svg" alt="DRISHTI operational loop diagram showing evidence review, decision support, human approval, and field updates" loading="lazy">
+              <span class="media-tag">DISASTER INTELLIGENCE &amp; RESPONSE</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 01</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">DRISHTI</h3>
+              <p class="project-role">Disaster Intelligence &amp; Response Platform</p>
+              <ul class="project-features">
+                <li><strong>Decision Intelligence:</strong> Engineered deterministic recommendation workflows evaluating evidence quality, resource readiness, capability matching, and route constraints for high-stakes missions.</li>
+                <li><strong>Geospatial Intelligence:</strong> Developed incident-monitoring pipelines to detect unassessed geographic zones and implemented offline command queuing for degraded connectivity.</li>
+                <li><strong>Full-Stack Architecture:</strong> Built a modern React 19/TypeScript frontend paired with a high-performance FastAPI backend, PostgreSQL/PostGIS spatial storage, and auditable mission lifecycles.</li>
+              </ul>
+              <div class="project-stack">
+                <span>React 19</span>
+                <span>TypeScript</span>
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>PostGIS</span>
+                <span>Geospatial AI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/veenit-cell/DRISHTI" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  View DRISHTI on GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <span class="project-badge">Disaster Response Demo</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: VASH -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/vash-tier1-dashboard.png" alt="VASH Tier-1 fraud investigation dashboard screenshot" loading="lazy">
+              <span class="media-tag">FINANCIAL FRAUD &amp; THREAT INTEL</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 02</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">VASH</h3>
+              <p class="project-role">Financial Fraud Detection &amp; Threat Intelligence</p>
+              <ul class="project-features">
+                <li><strong>ML-Based Fraud Analytics:</strong> Integrated an Isolation Forest anomaly-detection engine with SHAP feature attributions to provide explainable alerts and real-time transaction risk scoring.</li>
+                <li><strong>Graph Threat Detection:</strong> Implemented network topological analysis using strongly connected components to uncover circular laundering cycles and money-mule rings.</li>
+                <li><strong>Security &amp; Auditability:</strong> Engineered transaction-ingestion safeguards, authentication workflows, privacy-preserving account matching, and SHA-256 hash-chained audit logs.</li>
+              </ul>
+              <div class="project-stack">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>FastAPI</span>
+                <span>Python</span>
+                <span>Isolation Forest</span>
+                <span>Graph Analytics</span>
+                <span>SHA-256</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/S-Abhiram05/Hack2ignite-VASH" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  View VASH on GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <span class="project-badge">Fraud Detection Engine</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Prashikshan -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/prashikshan-placeholder.svg" alt="Prashikshan platform branding and system placeholder" loading="lazy">
+              <span class="media-tag">CAREER INTELLIGENCE &amp; EDTECH</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 03</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Prashikshan</h3>
+              <p class="project-role">AI-Driven Career Readiness Platform</p>
+              <ul class="project-features">
+                <li><strong>Career Intelligence:</strong> Designed skill-assessment and skill-gap analysis workflows to identify student competency deficits and formulate personalized learning pathways.</li>
+                <li><strong>Multi-Role Architecture:</strong> Engineered three interconnected portals (student, institute, and corporate industry) for evaluation, progress tracking, and placement pipelines.</li>
+                <li><strong>Full-Stack Development:</strong> Implemented RESTful backend routes in Node.js and Express.js, with SQLite database persistence, secure JWT authentication, and role-based access control.</li>
+              </ul>
+              <div class="project-stack">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>SQLite</span>
+                <span>JWT</span>
+                <span>REST API</span>
+                <span>Skill Analytics</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/veenit-cell/Prashikshan" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  View Prashikshan on GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <span class="project-badge">Published Paper Base</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Electronova Robotics Platform -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/electronova-robotics-winner.jpeg" alt="Winning robot hardware and team trophy at ELECTRONOVA robotics hackathon" loading="lazy">
+              <span class="media-tag">DATA-DRIVEN ROBOTICS INNOVATION</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 04</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Electronova Autonomous Bot</h3>
+              <p class="project-role">Embedded Firmware &amp; Data-Driven Navigation</p>
+              <ul class="project-features">
+                <li><strong>Autonomous Navigation:</strong> Engineered an obstacle-navigating robotic system built under a strict 24-hour sprint at the Electronova Robotics Hackathon.</li>
+                <li><strong>Sensor Fusion &amp; Control:</strong> Implemented real-time sensor fusion with ultrasonic/IR arrays and tuned PID feedback control for smooth motor steering in complex environments.</li>
+                <li><strong>Championship Recognition:</strong> Awarded <strong>First Position in Data-Driven Innovation</strong> for responsive micro-controller architecture and edge sensor calibration.</li>
+              </ul>
+              <div class="project-stack">
+                <span>C / C++</span>
+                <span>Arduino</span>
+                <span>PID Control</span>
+                <span>Sensor Fusion</span>
+                <span>Edge Computing</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/veenit-cell/Electonova-Hackathon_Winning_Robot-" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  View Robot on GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <span class="project-badge winner-badge">1st Position Winner</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS SECTION ── -->
+    <section class="content-section bg-contrast" id="publications" aria-labelledby="publications-title">
+      <div class="section-wrap">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">04 / Academic Research</p>
+            <h2 id="publications-title">Peer-reviewed<br><em>publication.</em></h2>
+          </div>
+          <p class="section-summary">
+            Published research addressing career readiness, institutional interfaces, and validated skill competency frameworks.
+          </p>
+        </div>
+
+        <div class="publication-card featured-publication">
+          <div class="pub-sidebar">
+            <span class="pub-type">JOURNAL PUBLICATION</span>
+            <span class="pub-date">Vol. 02, Issue 02 · 2026</span>
+            <span class="pub-badge">PEER REVIEWED</span>
+            <span class="pub-badge issn-badge">e-ISSN: 3107-7498</span>
+            <span class="pub-badge hbrp-badge">HBRP PUBLICATION</span>
+          </div>
+          <div class="pub-content">
+            <span class="pub-journal-label">Recent Trends in Data Science Technology (May–Aug 2026) · pp. 1–7</span>
+            <h3 class="pub-title">
+              Prashikshan: A Centralized Academia–Industry Interface for Internship and Skill Validation
+            </h3>
+            <p class="pub-author">
+              <strong>Authors:</strong> Dr. Devidas Thosar, Trisha Gujjula, Tanishka Devgirkar, <strong class="author-highlight">Veenit Ramteke</strong>, Lakshmi Sharma, Girish Patil, &amp; Anjali Gaur<br>
+              <span class="pub-dept">Dept. of AI &amp; AIML, G.H. Raisoni College of Engineering &amp; Management, Wagholi, Pune, Maharashtra</span>
+            </p>
+            <p class="pub-abstract">
+              Prashikshan is an AI-driven academia–industry interface system designed to bridge the gap between academic learning and industry requirements. The platform evaluates student competencies by analyzing academic records, certifications, and project experience using machine learning algorithms such as Random Forest and Neural Networks. Based on this analysis, the system identifies skill gaps, provides personalized recommendations to enhance employability, and automates transparent internship matching across a centralized multi-role architecture (student, institute admin, and industry portal).
+            </p>
+
+            <div class="pub-doi-box">
+              <span class="doi-label">Official DOI:</span>
+              <a href="https://doi.org/10.5281/zenodo.19552932" target="_blank" rel="noopener noreferrer" class="doi-link">
+                https://doi.org/10.5281/zenodo.19552932 <span aria-hidden="true">↗</span>
+              </a>
+              <span class="cert-note">· Certified by HBRP Publication Team (13/04/2026)</span>
+            </div>
+
+            <div class="pub-citation-box">
+              <span class="citation-label">Cite as:</span>
+              <p class="citation-text">
+                Dr. Devidas Thosar, Trisha Gujjula, Tanishka Devgirkar, Veenit Ramteke, Lakshmi Sharma, Girish Patil, &amp; Anjali Gaur. (2026). Prashikshan: A Centralized Academia–Industry Interface for Internship and Skill Validation. <em>Recent Trends in Data Science Technology</em>, 2(2), 1–7. https://doi.org/10.5281/zenodo.19552932
+              </p>
+            </div>
+
+            <div class="pub-meta">
+              <span class="pub-domain">Keywords: Academia–Industry Interface · Skill Gap Analysis · Random Forest &amp; Neural Networks · Employability</span>
+              <div class="pub-action-links">
+                <a href="https://doi.org/10.5281/zenodo.19552932" target="_blank" rel="noopener noreferrer" class="pub-link pub-primary-link">
+                  Open Paper DOI <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://github.com/veenit-cell/publication" target="_blank" rel="noopener noreferrer" class="pub-link pub-repo-link">
+                  View Paper &amp; Certificate Repo <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://github.com/veenit-cell/Prashikshan" target="_blank" rel="noopener noreferrer" class="pub-link">
+                  View Project Code <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ACHIEVEMENTS SECTION ── -->
+    <section class="content-section" id="achievements" aria-labelledby="achievements-title">
+      <div class="section-wrap">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">05 / Honors &amp; Awards</p>
+            <h2 id="achievements-title">National podiums &amp;<br><em>hackathon victories.</em></h2>
+          </div>
+          <p class="section-summary">
+            Recognized at premier engineering institutes across India for high-impact software, robotics, and data-driven innovation.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1: AVINYA IIT Guwahati -->
+          <article class="achievement-card">
+            <div class="achievement-media">
+              <img src="assets/images/avinya-iit-guwahati.jpeg" alt="Winner AVINYA Hackathon at IIT Guwahati" loading="lazy">
+              <span class="achievement-badge gold-badge">WINNER · FIRST PRIZE</span>
+            </div>
+            <div class="achievement-body">
+              <p class="achievement-kicker">IIT Guwahati National Hackathon · 2026</p>
+              <h3 class="achievement-heading">AVINYA Hackathon — IIT Guwahati</h3>
+              <p class="achievement-venue">Indian Institute of Technology Guwahati, Assam</p>
+              <p class="achievement-desc">
+                Secured <strong>First Prize</strong> at the AVINYA Hackathon hosted by IIT Guwahati. Competed against top engineering teams from across the nation, presenting an advanced, data-driven software architecture evaluated by distinguished technical jury and industry leaders.
+              </p>
+              <div class="achievement-links">
+                <a href="assets/images/avinya-iit-guwahati.jpeg" target="_blank" class="link-btn">
+                  View IIT Guwahati Award Photo <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Achievement 2: ELECTRONOVA -->
+          <article class="achievement-card">
+            <div class="achievement-media">
+              <img src="assets/images/electronova-robotics-winner.jpeg" alt="Winner Electronova Robotics Hackathon holding trophy and award" loading="lazy">
+              <span class="achievement-badge gold-badge">WINNER · FIRST POSITION</span>
+            </div>
+            <div class="achievement-body">
+              <p class="achievement-kicker">National Robotics Hackathon · 2024</p>
+              <h3 class="achievement-heading">Electronova Robotics Hackathon</h3>
+              <p class="achievement-venue">Data-Driven Innovation Track</p>
+              <p class="achievement-desc">
+                Won <strong>First Position in Data-Driven Innovation</strong> at the 24-hour national robotics hackathon. Designed, wired, and programmed an autonomous maze-navigating platform powered by real-time sensor fusion and responsive closed-loop motor control.
+              </p>
+              <div class="achievement-links">
+                <a href="https://github.com/veenit-cell/Electonova-Hackathon_Winning_Robot-" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  View Winning Robotics Code <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION SECTION ── -->
+    <section class="content-section bg-contrast" id="education" aria-labelledby="education-title">
+      <div class="section-wrap">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">06 / Academic Credentials</p>
+            <h2 id="education-title">Dual-track foundation:<br><em>Management &amp; Tech.</em></h2>
+          </div>
+          <p class="section-summary">
+            Combining world-class digital business strategy with rigorous computer science engineering.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Education 1: IIM Bangalore -->
+          <article class="education-card">
+            <div class="edu-top">
+              <span class="edu-timeline">2026 — 2029</span>
+              <span class="edu-badge iim-badge">PREMIER MANAGEMENT INSTITUTE</span>
+            </div>
+            <h3 class="edu-degree">BBA in Digital Business and Entrepreneurship</h3>
+            <p class="edu-institution">Indian Institute of Management Bangalore (IIM Bangalore)</p>
+            <p class="edu-location">Bangalore, Karnataka, India</p>
+            <div class="edu-details">
+              <p>Specialized program focused on digital enterprise architectures, technology commercialization, data-informed strategy, corporate governance, and entrepreneurial scaling.</p>
+            </div>
+          </article>
+
+          <!-- Education 2: GH Raisoni -->
+          <article class="education-card">
+            <div class="edu-top">
+              <span class="edu-timeline">Sep 2024 — Jun 2028</span>
+              <span class="edu-badge cse-badge">CGPA: 8.5 / 10.0</span>
+            </div>
+            <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
+            <p class="edu-institution">GH Raisoni College of Engineering</p>
+            <p class="edu-location">Pune, Maharashtra, India</p>
+            <div class="edu-details">
+              <p>Rigorous computer science curriculum emphasizing Data Structures, Algorithms, Machine Learning, Database Management Systems, Computer Networks, and Full-Stack Software Engineering.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section class="content-section bg-dark" id="contact" aria-labelledby="contact-title">
+      <div class="section-wrap">
+        <div class="contact-grid">
+          <div class="contact-intro">
+            <p class="section-kicker kicker-light">07 / Open Channel</p>
+            <h2 id="contact-title" class="title-light">Let’s discuss an idea<br><em>or collaboration.</em></h2>
+            <p class="contact-body">
+              Available for AI and software engineering roles, data science research, policy technology initiatives, and high-impact hackathon collaborations.
+            </p>
+
+            <div class="contact-cards">
+              <a href="mailto:veenitramteke@gmail.com" class="direct-link-card">
+                <span class="direct-label">Email Directly</span>
+                <strong class="direct-value">veenitramteke@gmail.com</strong>
+              </a>
+              <a href="tel:8766901425" class="direct-link-card">
+                <span class="direct-label">Phone</span>
+                <strong class="direct-value">+91 8766901425</strong>
+              </a>
+              <a href="https://www.linkedin.com/in/veenit-ramteke/" target="_blank" rel="noopener noreferrer" class="direct-link-card">
+                <span class="direct-label">LinkedIn</span>
+                <strong class="direct-value">linkedin.com/in/veenit-ramteke ↗</strong>
+              </a>
+              <a href="https://github.com/veenit-cell" target="_blank" rel="noopener noreferrer" class="direct-link-card">
+                <span class="direct-label">GitHub</span>
+                <strong class="direct-value">github.com/veenit-cell ↗</strong>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pure HTML/CSS Contact Form -->
+          <div class="contact-form-box">
+            <h3 class="form-title">Send a Direct Inquiry</h3>
+            <p class="form-desc">
+              Submit your inquiry below to trigger a pre-formatted draft in your native mail client. Built with pure HTML5 — no trackers or external scripts.
+            </p>
+            <form action="mailto:veenitramteke@gmail.com" method="get" enctype="text/plain" class="html-form">
+              <div class="form-group">
+                <label for="form-name">Your Full Name</label>
+                <input type="text" id="form-name" name="name" placeholder="e.g. Dr. Ramesh Gupta" required>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" value="Project Collaboration / Opportunity for Veenit" required>
+              </div>
+              <div class="form-group">
+                <label for="form-body">Your Message</label>
+                <textarea id="form-body" name="body" rows="5" placeholder="Hi Veenit, I reviewed your work on DRISHTI, VASH, and your paper on Prashikshan..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent btn-full">
+                Compose Email in Mail App <span aria-hidden="true">↗</span>
+              </button>
+              <p class="privacy-note">
+                🔒 Transmission via native client: veenitramteke@gmail.com · Pune, India
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── SITE FOOTER ── -->
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner">
+      <div class="footer-left">
+        <a class="footer-mark" href="#top" aria-label="Back to top">VR</a>
+        <div>
+          <strong class="footer-author">Veenit Ramteke</strong>
+          <p class="footer-tagline">AI &amp; Software Engineer · IIM Bangalore &amp; GH Raisoni College of Engineering</p>
+          <p class="footer-sub">Pune, India · veenitramteke@gmail.com · +91 8766901425</p>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-tech">Engineered strictly with <strong>Pure HTML5 &amp; CSS3</strong>. Zero JavaScript.</p>
+        <p class="footer-copy">© 2026 Veenit Ramteke. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#top" class="back-to-top">↑ Return to top</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
