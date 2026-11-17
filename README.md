@@ -10,6 +10,7 @@ A responsive, high-performance personal portfolio website built strictly with **
 - **Contact:** +91 8766901425 · veenitramteke@gmail.com · Pune, India
 - **LinkedIn:** [linkedin.com/in/veenit-ramteke](https://www.linkedin.com/in/veenit-ramteke/)
 - **GitHub:** [github.com/veenit-cell](https://github.com/veenit-cell)
+- **Live Vercel Website:** [https://veenit-portfolio-one.vercel.app](https://veenit-portfolio-one.vercel.app)
 - **Local Preview:** [http://localhost:8080](http://localhost:8080)
 
 ---

@@ -6,6 +6,7 @@
 **Location:** Pune, India  
 **LinkedIn:** https://www.linkedin.com/in/veenit-ramteke/  
 **GitHub:** https://github.com/veenit-cell/  
+**Live Vercel Website:** https://veenit-portfolio-one.vercel.app  
 
 ---
 
